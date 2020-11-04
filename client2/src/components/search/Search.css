@@ -1,0 +1,75 @@
+.container4 {
+  display: flex;
+  /* width: 100%; */
+  height: 60px;
+  justify-content: space-between;
+  background: rgb(245, 245, 245);
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  /* padding-top: 1px; */
+  /* margin-left: 10px; */
+}
+
+.cardwid {
+  display: flex;
+  height: 70px;
+  padding: 10px 20px;
+  width: 100%;
+  /* padding-top: 10%; */
+  justify-content: space-around;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.carditem1 {
+  /* object-fit: contain; */
+  max-width: 60px;
+  max-height: 50px;
+  border-radius: 50%;
+}
+.carditem2 {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.carditem3 {
+  /* padding-left: 50%; */
+  align-content: flex-end;
+}
+
+.wid {
+  /* margin-left: 10px; */
+  width: 95%;
+}
+
+.ser_container {
+  /* display: flex; */
+  /* position: relative; */
+  width: 100%;
+  display: grid;
+  padding: 10px 0px;
+  grid-template-columns: auto auto auto;
+}
+
+.ser_block {
+  /* max-width: 200px; */
+  height: 350px;
+  /* width: 33%; */
+  /* overflow: hidden; */
+}
+.ser_image {
+  /* width: auto; */
+  height: 350px;
+  object-fit: fill;
+}
+
+@media only screen and (max-width: 600px) {
+  .ser_image {
+    height: 170px;
+  }
+  .ser_block {
+    /* max-width: 200px; */
+    height: 170px;
+    /* width: 33%; */
+    /* overflow: hidden; */
+  }
+}

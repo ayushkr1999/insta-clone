@@ -1,0 +1,28 @@
+.container1 {
+  height: 60px;
+  position: fixed;
+  background: rgb(247, 247, 247);
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+.container1 img {
+  /* object-fit: contain; */
+  height: 40px;
+  width: 110px;
+  position: relative;
+  /* transform: translate(50%, 50%); */
+}
+
+.icon1 {
+  margin-left: 15px;
+  position: relative;
+}
+
+.icon2 {
+  position: relative;
+  margin-right: 15px;
+}

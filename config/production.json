@@ -1,0 +1,8 @@
+{
+    "mongoURI": "mongodb+srv://ayush:ayush@123@cluster0.jr1kd.mongodb.net/newonline?retryWrites=true&w=majority",
+    "secretOrKey": "secret",
+  
+    "githubClientId": "222e79018209e93e0183",
+    "githubSecret": "f9b8ebfa1b7b44baf161c989a19cfd4bfd1457e9"
+}
+  
