@@ -3,7 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/auth';
-
+import './Style.css'
 // import axios from 'axios';
 import PropTypes from 'prop-types';
 
@@ -33,11 +33,16 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   }
   return (
     <Fragment>
-      <h1 className='large text-primary'>Sign Up</h1>
+      <div className='cont'>
+        <div className='container2'>
+          <div className='card2'>
+     
+      
+      <form className='form' onSubmit={(e) => onSubmit(e)}>
+      <img src='https://freepngimg.com/thumb/logo/70011-instagram-script-typeface-myfonts-user-logo-font.png'className='iconinsta' ></img>
       <p className='lead'>
         <i className='fas fa-user' /> Create Your Account
       </p>
-      <form className='form' onSubmit={(e) => onSubmit(e)}>
         <div className='form-group'>
           <input
             type='text'
@@ -55,10 +60,10 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={email}
             onChange={(e) => onChange(e)}
           />
-          <small className='form-text'>
+          {/* <small className='form-text'>
             This site uses Gravatar so if you want a profile image, use a
             Gravatar email
-          </small>
+          </small> */}
         </div>
         <div className='form-group'>
           <input
@@ -79,10 +84,15 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
           />
         </div>
         <input type='submit' className='btn btn-primary' value='Register' />
-      </form>
-      <p className='my-1'>
-        Already have an account? <Link to='/login'>Sign In</Link>
+        <p className='my-1'>
+        Already have an account? <Link to='/'>Sign In</Link>
       </p>
+      </form>
+      
+      </div>
+        </div>
+        </div>
+      
     </Fragment>
   );
 };

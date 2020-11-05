@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     // Width: '702px',
     // height: '1000px',
-    width:'702px'
+    width:'702px',
+    marginBottom:5
   },
   media: {
     // height: 600,
@@ -37,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight:'700px',
     maxWidth:'700px',
     objectFit: 'fill',
+    
     // paddingTop: '56.25%', // 16:9
   },
   expand: {

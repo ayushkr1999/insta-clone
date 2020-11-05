@@ -31,7 +31,7 @@ const Comments = ({match ,post:{posts}}) => {
             <br></br>
            {val.comments.map((com) => <div className='com-container'>
                <img className='com-avatar' src={com.avatar}></img>
-    <div className='com-content'><b>{com.name}</b>{' '}{com.text}{com.text}{com.text}{com.text}{com.text}</div>
+    <div className='com-content'><b>{com.name}</b>{' '}{com.text}</div>
 
            </div> ) }
            <Footer />
