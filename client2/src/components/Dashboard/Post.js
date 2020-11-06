@@ -24,7 +24,10 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import { addLike,addComment } from '../../actions/post';
 import { TextField } from '@material-ui/core';
+import Moment from 'react-moment'
+
 const useStyles = makeStyles((theme) => ({
+  
   root: {
     // Width: '702px',
     // height: '1000px',
@@ -104,7 +107,7 @@ const Post = ({name ,cap , id,image,likes, comments ,date ,addLike ,addComment})
           </IconButton>
         }
         title={name}
-        subheader={date}
+        subheader={<Moment  date={date} format="hh:mm DD/MM/YYYY"></Moment> }
       />
       <div className={classes.fit}>
       <img

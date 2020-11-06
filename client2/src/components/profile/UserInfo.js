@@ -18,7 +18,7 @@ const UserInfo = ({name,image ,followers,following, logout}) => {
                 </div>
                 <div className='bio_item3'>
                 <p>Posts</p>
-    <p>4</p>
+    <p>5</p>
                 </div>
                 </div>
             </div>

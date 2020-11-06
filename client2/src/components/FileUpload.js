@@ -4,6 +4,9 @@ import Progress from './Progress';
 import axios from 'axios';
 import Header from './Header/Header';
 import Footer from './Header/Footer';
+import Moment from 'react-moment'
+
+
 
 const FileUpload = () => {
   const [file, setFile] = useState('');
@@ -15,19 +18,26 @@ const FileUpload = () => {
   const onChange = e => {
     setFile(e.target.files[0]);
     setFilename(e.target.files[0].name);
-
+    
   };
-  const value= 'cation is herer'
+  const onChange2 = e => {
+    // setFile(e.target.files[0]);
+    // setFilename(e.target.files[0].name);
+      setMessage(e.target.value)
+  };
+
+  // const value= 'cation is herer'
   const onSubmit = async e => {
     e.preventDefault();
     const formData = new FormData();
     formData.append('file', file);
+    
     // formData.append( 
     //   "myFile", 
     //   file, 
        
     // );
-    formData.append('cap',value) 
+    formData.append('cap',message) 
   //   for (var key of formData.keys()) {
   //     console.log(key); 
   //  }
@@ -63,10 +73,11 @@ const FileUpload = () => {
       }
     }
   };
-
+  console.log(message)
   return (
     <Fragment>
       {/* <Header /> */}
+      
       {/* {message ? <Message msg={message} /> : null} */}
       <div className='container'>
       <form onSubmit={onSubmit}>
@@ -76,7 +87,20 @@ const FileUpload = () => {
             className='custom-file-input'
             id='customFile'
             onChange={onChange}
+           
           />
+          <br></br>
+          <br></br>
+          {/* <br></br> */}
+          <textarea
+            type='text'
+            className=''
+            id='customFile'
+            onChange={onChange2}
+            style={{width:'100%'}}
+          />
+          <br></br>
+          <br></br>
           <label className='custom-file-label' htmlFor='customFile'>
             {filename}
           </label>
